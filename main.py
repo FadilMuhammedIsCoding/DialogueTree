@@ -1,5 +1,5 @@
 import tkinter
-from frontend.containers.node import Node
+from frontend.containers.standard_node import StandardNode
 
 
 class Manager:
@@ -8,7 +8,7 @@ class Manager:
         self.root.title("Dialogue Tree")
         self.root.geometry("960x540")
 
-        self.node = Node(self.root, 50, 50)
+        self.node = StandardNode(self.root, 50, 50)
 
     def run(self):
         self.root.mainloop()
