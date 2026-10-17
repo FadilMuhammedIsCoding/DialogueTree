@@ -23,5 +23,3 @@ class NodeParser:
 
             if type(field) is TextField:
                 final_dict[field.get_id()] = field.get_data()
-
-        print(final_dict)
