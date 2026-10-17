@@ -1,7 +1,6 @@
 from tkinter import *
 from frontend.globals import *
 from frontend.containers.node import Node
-from frontend.fields.text_field import TextField
 from frontend.functionals.drag_bar import DragBar
 from frontend.fields.node_name import NodeName
 from frontend.functionals.field_adder import FieldAdder
@@ -11,11 +10,8 @@ class StandardNode(Node):
     def __init__(self, master, x=0, y=0):
         super().__init__(master=master, x=x, y=y)
 
-        self.drag_bar = DragBar(self)
-        self.drag_bar.pack(padx=padding, pady=padding)
-
         self.node_name = NodeName(self)
-        self.node_name.pack(padx=padding, pady=padding)
+        self.add_field(self.node_name)
 
         self.field_adder = FieldAdder(self)
         self.field_adder.pack(padx=padding, pady=padding)
@@ -24,8 +20,6 @@ class StandardNode(Node):
         self.bind("<ButtonPress-3>", self.show_context_menu)
 
         self.context_menu.add_command(label="Delete Node", command=self.destroy)
-
-        print(self.winfo_children())
 
     def show_context_menu(self, event):
         self.context_menu.tk_popup(x=event.x_root, y=event.y_root)

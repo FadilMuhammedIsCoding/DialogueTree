@@ -1,7 +1,8 @@
 from tkinter import Entry, StringVar
+from frontend.fields.field import Field
 
 
-class NodeName(Entry):
+class NodeName(Entry, Field):
     def __init__(self, master):
         super().__init__(master=master, width=12, justify="center")
 
@@ -9,3 +10,6 @@ class NodeName(Entry):
         self.config(textvariable=self.text)
 
         self.text.set("Node")
+
+    def get_text(self):
+        return self.text.get()

@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df9ec50f-917c-4452-bc05-996a55775140" name="Changes" comment="Added a node class.">
-      <change afterPath="$PROJECT_DIR$/frontend/containers/standard_node.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fields/node_name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fields/text_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/functionals/drag_bar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/functionals/field_adder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/globals.py" afterDir="false" />
+    <list default="true" id="df9ec50f-917c-4452-bc05-996a55775140" name="Changes" comment="Added several classes like FieldAdder, DragBar, etc. for more modularity.">
+      <change afterPath="$PROJECT_DIR$/backend/data/node_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/fields/field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/functionals/functional.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/containers/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/containers/node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/containers/standard_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/containers/standard_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/fields/node_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fields/node_name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/fields/text_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fields/text_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/functionals/drag_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/functionals/drag_bar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/functionals/field_adder.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/functionals/field_adder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,12 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1791923529901</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added several classes like FieldAdder, DragBar, etc. for more modularity.">
+      <option name="closed" value="true" />
+      <created>1791998311220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791998311220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added a node class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a node class." />
+    <MESSAGE value="Added several classes like FieldAdder, DragBar, etc. for more modularity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added several classes like FieldAdder, DragBar, etc. for more modularity." />
   </component>
 </project>

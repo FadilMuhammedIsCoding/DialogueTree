@@ -1,10 +1,10 @@
 from tkinter import Label
+from frontend.functionals.functional import Functional
 
 
-class DragBar(Label):
+class DragBar(Label, Functional):
     def __init__(self, master):
-        super().__init__(master=master, text="==", width=10, height=1, cursor="hand2")
-        self.master = master
+        super().__init__(master=master, text="==", height=1, cursor="hand2")
 
         self.bind("<ButtonPress-1>", self.drag_start)
         self.bind("<B1-Motion>", self.drag_motion)
