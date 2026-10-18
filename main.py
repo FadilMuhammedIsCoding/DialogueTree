@@ -1,6 +1,7 @@
 import tkinter
 from frontend.containers.standard_node import StandardNode
-from backend.data.node_parser import NodeParser
+from backend.data.parser import Parser
+from frontend.screens.collection import Collection
 
 
 class Manager:
@@ -17,12 +18,17 @@ class Manager:
 
         self.change_menu.add_command(label="Save", command=self.save)
 
-        self.node = StandardNode(self.root, 50, 50)
+        self.collection = Collection(self.root)
+        self.collection.pack(padx=5, pady=5, fill="both", expand=True)
+
+        self.node = StandardNode(self.collection, 50, 50)
+        self.collection.add_node(self.node)
 
     def save(self):
-        NodeParser.convert_node_to_dictionary(self.node)
+        Parser.convert_node_to_dictionary(self.node)
 
     def run(self):
+        self.collection.draw_grid()
         self.root.mainloop()
 
 

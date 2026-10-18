@@ -11,10 +11,11 @@ class StandardNode(Node):
         super().__init__(master=master, x=x, y=y)
 
         self.node_name = NodeName(self)
-        self.add_field(self.node_name)
+        self.fields.append(self.node_name)
+        self.node_name.pack(padx=padding, pady=padding, expand=True, fill="both")
 
         self.field_adder = FieldAdder(self)
-        self.field_adder.pack(padx=padding, pady=padding)
+        self.field_adder.pack(padx=padding, pady=padding, expand=True, fill="both")
 
         self.context_menu = Menu(self, tearoff=False)
         self.bind("<ButtonPress-3>", self.show_context_menu)
