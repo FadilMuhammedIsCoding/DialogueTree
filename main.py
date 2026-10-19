@@ -19,7 +19,7 @@ class Manager:
         self.change_menu.add_command(label="Save", command=self.save)
 
         self.collection = Collection(self.root)
-        self.collection.pack(padx=5, pady=5, fill="both", expand=True)
+        self.collection.pack(fill="both", expand=True)
 
         self.node = StandardNode(self.collection, 50, 50)
         self.collection.add_node(self.node)

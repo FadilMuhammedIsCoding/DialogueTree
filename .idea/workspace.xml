@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df9ec50f-917c-4452-bc05-996a55775140" name="Changes" comment="Made some architecture changes.">
-      <change afterPath="$PROJECT_DIR$/frontend/screens/collection.py" afterDir="false" />
+    <list default="true" id="df9ec50f-917c-4452-bc05-996a55775140" name="Changes" comment="More architecture changes.">
+      <change afterPath="$PROJECT_DIR$/frontend/fields/connector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/fields/connector_subnodes/connection_receiver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/fields/connector_subnodes/connection_sender.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/mouse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/node_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/containers/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/containers/node.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/containers/standard_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/containers/standard_node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/fields/text_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fields/text_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/functionals/drag_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/functionals/drag_bar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/functionals/field_adder.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/functionals/field_adder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/globals.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/globals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/screens/collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/screens/collection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792217777637</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="More architecture changes.">
+      <option name="closed" value="true" />
+      <created>1792326198435</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1792326198435</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,6 +159,7 @@
     <MESSAGE value="Added a node class." />
     <MESSAGE value="Added several classes like FieldAdder, DragBar, etc. for more modularity." />
     <MESSAGE value="Made some architecture changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made some architecture changes." />
+    <MESSAGE value="More architecture changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="More architecture changes." />
   </component>
 </project>

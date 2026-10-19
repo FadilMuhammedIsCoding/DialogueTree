@@ -17,6 +17,7 @@ class DragBar(Label, Functional):
         self.master.initial_y = event.y
 
     def drag_motion(self, event):
+        self.event_generate("<<Moving>>")
         self.master.x = self.master.winfo_x() - self.master.initial_x + event.x
         self.master.y = self.master.winfo_y() - self.master.initial_y + event.y
         self.master.place(x=self.master.x, y=self.master.y)
