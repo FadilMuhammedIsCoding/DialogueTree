@@ -12,6 +12,8 @@ class Node(Frame):
         self.x = x
         self.y = y
 
+        self.identifier = ""
+
         self.original_width = 100
         self.original_height = 100
 
@@ -20,12 +22,28 @@ class Node(Frame):
 
         self.drag_bar = DragBar(self)
         self.drag_bar.pack(padx=padding, pady=padding, expand=True, fill="both")
-        self.drag_bar.bind("<<Moving>>", self.signal_change)
+        self.drag_bar.bind("<<Moving>>", self.moving)
+
+    def get_identifier(self):
+        return self.identifier
 
     def add_field(self, field):
         self.fields.append(field)
-        if type(field) is Connector: field.bind("<<SearchingForNode>>", self.signal_change)
+        if type(field) is Connector:
+            field.bind("<<SearchingForNode>>", self.searching_for_node)
+            field.bind("<<SearchingAborted>>", self.searching_aborted)
+            field.bind("<<SearchingSuccessful>>", self.searching_successful)
+
         field.pack(padx=padding, pady=padding, expand=True, fill="both")
 
-    def signal_change(self, event):
+    def moving(self, event):
         self.event_generate("<<Moving>>")
+
+    def searching_for_node(self, event):
+        self.event_generate("<<SearchingForNode>>", x=event.x, y=event.y)
+
+    def searching_aborted(self, event):
+        self.event_generate("<<SearchingAborted>>")
+
+    def searching_successful(self, event):
+        self.event_generate("<<SearchingSuccessful>>")

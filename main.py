@@ -1,7 +1,7 @@
 import tkinter
 from frontend.containers.standard_node import StandardNode
 from backend.data.parser import Parser
-from frontend.screens.collection import Collection
+from frontend.screens.murder_map import MurderMap
 
 
 class Manager:
@@ -18,7 +18,7 @@ class Manager:
 
         self.change_menu.add_command(label="Save", command=self.save)
 
-        self.collection = Collection(self.root)
+        self.collection = MurderMap(self.root)
         self.collection.pack(fill="both", expand=True)
 
         self.node = StandardNode(self.collection, 50, 50)

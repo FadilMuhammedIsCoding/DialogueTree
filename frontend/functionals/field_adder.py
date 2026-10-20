@@ -1,4 +1,3 @@
-import tkinter
 from tkinter import Button, Menu
 from frontend.fields.text_field import TextField
 from frontend.functionals.functional import Functional
@@ -8,7 +7,6 @@ from frontend.fields.connector import Connector
 class FieldAdder(Button, Functional):
     def __init__(self, master):
         super().__init__(master=master, width=10, height=1, text="+Add Field")
-        self.add_event_string = "<<AddedWidget>>"
         self.last_added_field = None
 
         self.config(command=self.show_context_menu)
