@@ -21,29 +21,17 @@ class Node(Frame):
         self.initial_y = 0
 
         self.drag_bar = DragBar(self)
+        self.drag_bar.bind("<<Moving>>", lambda event: self.event_generate("<<Moving>>"))
         self.drag_bar.pack(padx=padding, pady=padding, expand=True, fill="both")
-        self.drag_bar.bind("<<Moving>>", self.moving)
 
     def get_identifier(self):
         return self.identifier
 
     def add_field(self, field):
         self.fields.append(field)
-        if type(field) is Connector:
-            field.bind("<<SearchingForNode>>", self.searching_for_node)
-            field.bind("<<SearchingAborted>>", self.searching_aborted)
-            field.bind("<<SearchingSuccessful>>", self.searching_successful)
-
         field.pack(padx=padding, pady=padding, expand=True, fill="both")
 
-    def moving(self, event):
-        self.event_generate("<<Moving>>")
-
-    def searching_for_node(self, event):
-        self.event_generate("<<SearchingForNode>>", x=event.x, y=event.y)
-
-    def searching_aborted(self, event):
-        self.event_generate("<<SearchingAborted>>")
-
-    def searching_successful(self, event):
-        self.event_generate("<<SearchingSuccessful>>")
+    def get_connecting_position(self):
+        x = self.winfo_rootx() + (self.winfo_width() // 2)
+        y = self.winfo_rooty() + (self.winfo_height() // 2)
+        return x, y

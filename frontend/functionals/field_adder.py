@@ -1,7 +1,8 @@
 from tkinter import Button, Menu
 from frontend.fields.text_field import TextField
 from frontend.functionals.functional import Functional
-from frontend.fields.connector import Connector
+from frontend.fields.connector_subnodes.connection_sender import ConnectionSender
+from frontend.fields.connector_subnodes.connection_receiver import ConnectionReceiver
 
 
 class FieldAdder(Button, Functional):
@@ -13,7 +14,7 @@ class FieldAdder(Button, Functional):
 
         self.context_menu = Menu(self, tearoff=False)
         self.context_menu.add_command(label="Add Text Field", command=self.add_text_field)
-        self.context_menu.add_command(label="Add Connector Field", command=self.add_connector_field)
+        self.context_menu.add_command(label="Add Connection Sender Field", command=self.add_connection_sender_field)
 
     def get_last_added_field(self):
         return self.last_added_field
@@ -25,6 +26,7 @@ class FieldAdder(Button, Functional):
         text_field = TextField(self.master)
         self.master.add_field(text_field)
 
-    def add_connector_field(self):
-        connector_field = Connector(self.master)
+    def add_connection_sender_field(self):
+        connector_field = ConnectionSender(self.master)
         self.master.add_field(connector_field)
+        self.event_generate("<<ConnectionSenderAdded>>")

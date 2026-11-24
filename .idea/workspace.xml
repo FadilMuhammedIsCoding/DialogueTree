@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df9ec50f-917c-4452-bc05-996a55775140" name="Changes" comment="Nodes can draw lines between each other now! hulululululululu">
-      <change afterPath="$PROJECT_DIR$/frontend/screens/murder_map.py" afterDir="false" />
+    <list default="true" id="df9ec50f-917c-4452-bc05-996a55775140" name="Changes" comment="Might change the architecture again later. The code is so messy right now, it began playing football.">
+      <change afterPath="$PROJECT_DIR$/backend/save_system/save_system.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/data/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/containers/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/containers/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/fields/connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fields/connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/containers/standard_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/containers/standard_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/fields/connector_subnodes/connection_receiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fields/connector_subnodes/connection_receiver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/fields/connector_subnodes/connection_sender.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fields/connector_subnodes/connection_sender.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/fields/node_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fields/node_name.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/functionals/field_adder.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/functionals/field_adder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/screens/collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/screens/collection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/screens/murder_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/screens/murder_map.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792437653880</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Might change the architecture again later. The code is so messy right now, it began playing football.">
+      <option name="closed" value="true" />
+      <created>1792508764633</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1792508764633</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,6 +176,7 @@
     <MESSAGE value="Made some architecture changes." />
     <MESSAGE value="More architecture changes." />
     <MESSAGE value="Nodes can draw lines between each other now! hulululululululu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nodes can draw lines between each other now! hulululululululu" />
+    <MESSAGE value="Might change the architecture again later. The code is so messy right now, it began playing football." />
+    <option name="LAST_COMMIT_MESSAGE" value="Might change the architecture again later. The code is so messy right now, it began playing football." />
   </component>
 </project>
